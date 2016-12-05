@@ -17,7 +17,7 @@ shinyUI(fluidPage(
       sliderInput("d",
                   "Mean difference:",
                   min = 0,
-                  max = 4,
+                  max = 2,
                   step = 0.05,
                   value = 0),
       sliderInput("plotmax",
