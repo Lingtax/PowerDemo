@@ -5,7 +5,7 @@ One way to illustrate these principles is through simulation of numerous trials.
 As a side benefit, these simulations allow for the demonstration of more basic principles in the NHST framework, like type I error rates, and lay the foundation for [explanation of concepts like the p-curve][1]. 
 
 The demonstrations operate through a common, basic routine. 
-1. Users input planned mean differences (d), and group size (n)
+1. Users input planned mean differences (d), critical value, and group size (n)
 2. For a specified number of simulated trials, the scripts simulate two samples of size n, from random normally distributed populations with means of 0 and d, and sd of 1. 
 3. A Welch test is conducted between the groups in each simulated study, and the p-values are stored.
 4. A histogram is generated of the p values obtained from the simulated studies
