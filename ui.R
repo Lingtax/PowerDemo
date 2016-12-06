@@ -20,6 +20,13 @@ shinyUI(fluidPage(
                   max = 2,
                   step = 0.05,
                   value = 0),
+      selectInput("crit",
+                  "Critical value:",
+                  c("p < .10" = .10,
+                    "p < .05" = .05,
+                    "p < .01" = .01,
+                    "p < .001" = .001),
+                   selected = .05),      
       sliderInput("plotmax",
                   "Upper value in plot:",
                   min = .05,
@@ -30,7 +37,8 @@ shinyUI(fluidPage(
     
     # Show a plot of the generated distribution
     mainPanel(
-      plotOutput("distPlot")
+      plotOutput("distPlot"),
+      textOutput("text1")
     )
   )
 ))
